@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel='stylesheet' type='text/css'>
+    </head>
+  <div class="col-md-6 offset-md-3 mt-5 p-3 mb-2 bg-light text-black">
+    <br>
+    <h1>Job Application</h1>
+    <hr color="black" style="height: 3px;">
+    <form accept-charset="UTF-8" action="https://getform.io/f/46ab0886-b013-4f36-9061-8476a18f5228" method="POST" enctype="multipart/form-data" target="_blank">
+
+      <div class="p-3 mb-2 bg-primary text-white">
+        <legend>Job type</legend>
+        <hr color="white">
+        <div class="form-group">
+            <label for="exampleInputApplicationFor">Application for:</label>
+            <select name="Applicationfor" class="form-control" required="required" id="exampleInputApplicationFor"> <option value="">Please select</option> <option value="software_engineering">Software engineering</option> <option value="electrical_engineering">Electrical engineering</option> <option value="mechanical_engineering">Mechanical engineering</option> <option value="civil_engineering">Civil engineering</option> <option value="chemical_engineering">Chemical engineering</option></select>
+        </div>
+
+        <div class="form-group">
+            What type of position are you seeking? (check all that apply)
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="full_time" name="position_full_time" id="position_full_time">
+                <label class="form-check-label" for="position_full_time">Full time</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="part_time" name="position_part_time" id="position_part_time">
+                <label class="form-check-label" for="position_part_time">Part time</label>
+            </div>
+          </div>
+      </div>
+      
+      <div class="p-3 mb-2 bg-warning text-dark">
+        <legend>Account info</legend>
+        <hr color="dark">
+        <div class="form-group">
+            <label for="inputEmail" required="required">Email address</label>
+            <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Enter your email address" required="required">
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword" required="required">Set password</label>
+            <input type="password" name="password" class="form-control" id="inputPassword" aria-describedby="emailHelp" placeholder="Enter your password" required="required">
+        </div>
+      </div>
+
+      <div class="p-3 mb-2 bg-success text-white">
+        <legend>Personal info</legend>
+        <hr color="white">
+        <div class="form-group">
+            <label for="inputName">Full Name</label>
+            <input type="text" name="fullname" class="form-control" id="inputName" placeholder="Enter first and last name" required="required">
+        </div>
+
+        <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" name="address" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" name="city" class="form-control" id="inputCity" placeholder="Seattle">
+            </div>
+
+            <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" name="zip" class="form-control" id="inputZip" placeholder="98058">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="example-tel-input" class="col-0 col-form-label">Telephone</label>
+            <div class="col-0">
+            <input class="form-control" name="tel" type="tel" value="" placeholder="1-(555)-555-5555" id="example-tel-input">
+            </div>
+        </div>
+      </div>
+
+      <div class="p-3 mb-2 bg-secondary text-white">
+        <legend>Availability</legend>
+        <hr color="white">
+        <div class="form-group">
+            <label for="example-date-input" class="col-3 col-form-label">Start Date</label>
+            <div class="col-10">
+            <input class="form-control" name="start_date" type="date" value="" id="example-date-input">
+            </div>
+        </div>
+
+        <div class="form-group">
+            Are you willing to relocate?
+            <div class="form-check">
+            <input class="form-check-input" id="yes" type="radio" name="relocate" value="yes" checked>
+            <label class="form-check-label" for="yes">Yes</label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" id="no" type="radio" name="relocate" value="no">
+            <label class="form-check-label" for="no">No</label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" id="not_sure" type="radio" name="relocate" value="not_sure">
+            <label class="form-check-label" for="not_sure">Not sure!</label>
+            </div>
+        </div>
+      </div>
+
+      <div class="p-3 mb-2 bg-danger text-white">
+        <legend>Resume</legend>
+        <hr color="white">
+        <div class="form-group mt-3">
+            <label class="mr-4" for="resume">Upload your Resume:</label>
+            <input type="file" name="resume" id="resume">
+        </div>
+      </div>
+
+      <div class="p-3 mb-2 bg-info text-white">
+        <legend>Ask us!</legend>
+        <hr color="white">
+        <div class="form-group">
+            <label class="control-label">Do you have any question for us?</label>
+            <textarea class="form-control" name="questions_for_us" rows="4"></textarea>
+        </div>
+      </div>
+      <input class="btn btn-primary btn-lg" type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+
+</html>
